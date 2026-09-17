@@ -1,6 +1,8 @@
 # Arquitetura
 
-CardPlay é um monorepositório didático. O caminho de uma ação do aplicativo até o banco é este:
+CardPlay é um monorepositório didático. Para instalar SDK, Node e pacotes, o aluno começa pelo [COMECEPORAQUI.md](../COMECEPORAQUI.md).
+
+O caminho de uma ação do aplicativo até o banco é este:
 
 ```text
 React Native

@@ -1,5 +1,7 @@
 # CardPlay
 
+**Aluno, comece por aqui:** [COMECEPORAQUI.md](COMECEPORAQUI.md) — instalação do SDK, Node, Git, pacotes e um prompt para a IA preparar a máquina.
+
 Projeto-base do curso **Desenvolvimento de Software com IA**.
 
 CardPlay é uma plataforma lúdica pequena: a pessoa solicita um cartão virtual interno, adiciona saldo com uma recarga simulada e consulta um catálogo de produtos. O cartão **não** é um cartão bancário. Não há PAN, CVV, banco, gateway nem compra nesta versão.
@@ -40,7 +42,8 @@ SQLite
 Detalhes e dependências reais entre projetos: [docs/architecture.md](docs/architecture.md).  
 Como trabalhar no código (humanos e agentes): [AGENTS.md](AGENTS.md).  
 Comportamento atual do produto: [docs/product.md](docs/product.md).  
-Cores e usabilidade: [docs/ui.md](docs/ui.md).
+Cores e usabilidade: [docs/ui.md](docs/ui.md).  
+Ambiente de desenvolvimento: [COMECEPORAQUI.md](COMECEPORAQUI.md).
 
 ## Estrutura do repositório
 
@@ -52,21 +55,24 @@ Cores e usabilidade: [docs/ui.md](docs/ui.md).
     tests/CardPlay.Tests
   mobile/          # Expo + TypeScript
   docs/            # architecture, product, ui, backlog, prompt
+  COMECEPORAQUI.md # primeiro material do aluno (instalação)
   README.md
   AGENTS.md
 ```
 
 ## Pré-requisitos
 
+Instalação completa, checagem de versões e prompt para a IA configurar a máquina: [COMECEPORAQUI.md](COMECEPORAQUI.md).
+
 - SDK .NET 10 (LTS). Este repositório foi criado com `10.0.100`.
 - Node.js 20+ (o ambiente de criação usou v24)
 - Git
-- Expo Go no celular, ou um emulador Android / simulador iOS
+- Expo Go no celular, ou um emulador Android / simulador iOS (no Windows, Expo web também serve)
 
 Ferramenta local do Entity Framework:
 
 ```bash
-dotnet tool restore
+dotnet tool restore --tool-manifest dotnet-tools.json
 ```
 
 ## Como executar o backend

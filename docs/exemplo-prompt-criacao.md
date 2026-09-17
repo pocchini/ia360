@@ -8,6 +8,8 @@ A divisão de camadas neste prompt está alinhada com o repositório: **Applicat
 
 As cores predominantes e as regras de usabilidade também estão alinhadas: **azul** para identidade e navegação, **laranja** para saldo e ações. O detalhe está em `docs/ui.md`.
 
+O primeiro material do aluno é o `COMECEPORAQUI.md`: instalação das ferramentas e um prompt para pedir à IA que prepare a máquina.
+
 ---
 
 # Contexto
@@ -95,6 +97,7 @@ Quero um monorepositório aproximadamente desta forma:
     backlog.md
     exemplo-prompt-criacao.md
 
+  COMECEPORAQUI.md
   README.md
   AGENTS.md
   .gitignore
@@ -270,7 +273,9 @@ Este projeto será explorado por alunos e por ferramentas de IA.
 
 Portanto, conhecimento importante precisa estar descobrível no próprio projeto.
 
-O `README.md` deve explicar propósito, arquitetura resumida, pré-requisitos, como executar backend, como executar mobile, como criar/aplicar banco, como executar testes, estrutura principal do repositório e um resumo das cores/usabilidade com link para `docs/ui.md`.
+O `COMECEPORAQUI.md` é o primeiro material do aluno. Deve ensinar a instalar Git, SDK .NET 10, Node.js 20+, restaurar pacotes do backend e do mobile, conferir versões e subir API e Expo. Deve incluir um prompt copiável para o aluno colar no Cursor, Claude ou outra ferramenta e pedir que ela faça o setup na máquina.
+
+O `README.md` deve apontar o `COMECEPORAQUI.md` no topo, e explicar propósito, arquitetura resumida, pré-requisitos, como executar backend, como executar mobile, como criar/aplicar banco, como executar testes, estrutura principal do repositório e um resumo das cores/usabilidade com link para `docs/ui.md`.
 
 O `AGENTS.md` deve explicar para humanos e agentes como trabalhar neste projeto, incluindo arquitetura, dependências entre camadas, comandos importantes, regras de implementação, regras de teste, padrões visuais/usabilidade e orientação explícita para explorar antes de modificar.
 
@@ -354,7 +359,7 @@ A afirmação “está funcionando” precisa ser acompanhada pela evidência qu
 
 # Critério de sucesso do estado inicial
 
-Ao final da construção, devemos conseguir iniciar backend e mobile seguindo apenas o README; criar um cartão pela interface; visualizar seu saldo; realizar uma recarga; observar o novo saldo; consultar o registro da recarga; visualizar produtos do catálogo; confirmar que a compra ainda não existe; executar build e testes com sucesso; compreender rapidamente onde cada responsabilidade vive no repositório.
+Ao final da construção, um aluno deve conseguir instalar as ferramentas pelo `COMECEPORAQUI.md` (ou pelo prompt de IA desse arquivo) e em seguida iniciar backend e mobile pelo README; criar um cartão pela interface; visualizar seu saldo; realizar uma recarga; observar o novo saldo; consultar o registro da recarga; visualizar produtos do catálogo; confirmar que a compra ainda não existe; executar build e testes com sucesso; compreender rapidamente onde cada responsabilidade vive no repositório.
 
 A aplicação deve parecer intencional e agradável, com azul e laranja como cores predominantes e usabilidade adequada a telas mobile, mas continuar pequena o suficiente para que um desenvolvedor iniciante consiga explorar o projeto e explicar o caminho de uma ação do React Native até o SQLite.
 

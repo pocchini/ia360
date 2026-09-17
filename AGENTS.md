@@ -2,9 +2,11 @@
 
 Orientações para pessoas e para agentes de IA que forem modificar este repositório.
 
+Alunos que ainda não têm o ambiente: o primeiro material é o `COMECEPORAQUI.md`. Se pedirem para instalar SDK, Node, Git ou pacotes, siga esse arquivo; não invente versões.
+
 ## Antes de mudar qualquer arquivo
 
-1. Leia este arquivo, o `README.md`, `docs/architecture.md` e `docs/ui.md`.
+1. Leia este arquivo, o `README.md`, `docs/architecture.md` e `docs/ui.md`. Para setup de máquina, leia `COMECEPORAQUI.md`.
 2. Explore a estrutura atual e o Git. Não sobrescreva trabalho existente.
 3. Entenda o impacto da mudança. Prefira o menor diff que resolva o problema.
 4. Não implemente a compra de produtos enquanto ela estiver só no backlog.
@@ -76,7 +78,7 @@ Uma recarga precisa persistir saldo e movimentação no mesmo `SaveChanges`.
 ## Comandos
 
 ```bash
-dotnet tool restore
+dotnet tool restore --tool-manifest dotnet-tools.json
 dotnet build backend/CardPlay.sln
 dotnet test backend/CardPlay.sln
 dotnet run --project backend/src/CardPlay.Api --urls http://localhost:5080

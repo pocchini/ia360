@@ -1,0 +1,30 @@
+@CardPlay.Api_HostAddress = http://localhost:5080
+
+POST {{CardPlay.Api_HostAddress}}/api/cartoes
+Content-Type: application/json
+
+{
+  "nomeTitular": "Ana Silva"
+}
+
+###
+
+GET {{CardPlay.Api_HostAddress}}/api/cartoes/00000000-0000-0000-0000-000000000000
+
+###
+
+POST {{CardPlay.Api_HostAddress}}/api/cartoes/00000000-0000-0000-0000-000000000000/recargas
+Content-Type: application/json
+
+{
+  "valor": 25.50,
+  "descricao": "Recarga teste"
+}
+
+###
+
+GET {{CardPlay.Api_HostAddress}}/api/cartoes/00000000-0000-0000-0000-000000000000/movimentacoes
+
+###
+
+GET {{CardPlay.Api_HostAddress}}/api/produtos

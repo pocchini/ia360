@@ -1,0 +1,17 @@
+export const cores = {
+  fundo: '#F3F6FB',
+  superficie: '#FFFFFF',
+  tinta: '#1B2430',
+  tintaSuave: '#5B6775',
+  azul: '#1D5AA6',
+  azulEscuro: '#163E75',
+  azulSuave: '#E4EEF9',
+  laranja: '#E86A17',
+  laranjaEscuro: '#C2510C',
+  laranjaSuave: '#F8E4D2',
+  coral: '#C43C2C',
+  linha: '#D7E2F0',
+  ouro: '#FFB86B',
+  noDestaque: '#F4F8FF',
+  noDestaqueSuave: '#C5D7F0',
+};

@@ -1,0 +1,51 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+artifacts/
+TestResults/
+*.nupkg
+project.lock.json
+
+# Banco local
+*.db
+*.db-shm
+*.db-wal
+backend/src/CardPlay.Api/cardplay.db*
+
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+npm-debug.*
+yarn-error.*
+.metro-health-check*
+
+# Segredos
+.env
+.env.*
+!.env.example
+
+# IDE / SO
+.vs/
+.idea/
+.cursor/
+.claude/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
